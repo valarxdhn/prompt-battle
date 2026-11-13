@@ -1,20 +1,22 @@
-import type { Metadata } from "next";
-import type { ReactNode } from "react";
-import "./globals.css";
+import type { Metadata } from 'next';
+import { AppProvider } from '../context/DemoContext';
+import './globals.css';
 
 export const metadata: Metadata = {
-  title: "Miro Wireframe",
-  description: "View the project wireframe in Miro.",
+  title: 'ROUTELESS — RuralLink',
+  description: 'Smart rural transport for students',
 };
 
 export default function RootLayout({
   children,
-}: Readonly<{
-  children: ReactNode;
-}>) {
+}: {
+  children: React.ReactNode;
+}) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body>
+        <AppProvider>{children}</AppProvider>
+      </body>
     </html>
   );
 }
