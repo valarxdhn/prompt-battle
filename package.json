@@ -1,0 +1,22 @@
+{
+  "name": "routeless-platform",
+  "version": "1.0.0",
+  "description": "ROUTELESS – AI-Powered Smart Student Transportation Platform",
+  "scripts": {
+    "start": "node server/index.js",
+    "dev:server": "cd server && npm run dev",
+    "dev:client": "cd client && npm run dev",
+    "build": "cd client && npm run build",
+    "install:all": "cd server && npm install && cd ../client && npm install"
+  },
+  "keywords": [
+    "student-transportation",
+    "smart-mobility",
+    "ai-demand-prediction",
+    "crowd-heatmaps",
+    "transit-intelligence"
+  ],
+  "author": "Google DeepMind / Antigravity",
+  "license": "ISC"
+}
+
